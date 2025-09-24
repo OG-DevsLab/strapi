@@ -4,8 +4,8 @@ module.exports = ({ env }) => ({
   // autoOpen: false,
   vite: {
     server: {
-      allowedHosts: 'all', // Permite todos los hosts
-      host: '0.0.0.0'
+      host: true, // Permitir acceso externo
+      origin: 'auto' // Detectar origen automáticamente
     }
   },
   auth: {
